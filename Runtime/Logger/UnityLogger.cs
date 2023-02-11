@@ -1,11 +1,11 @@
 ﻿using JetBrains.Annotations;
 using UnityEngine;
-using ILogger = Northgard.Core.Abstraction.Logger.ILogger;
+using ILogger = Northgard.Core.Infrastructure.Logger.ILogger;
 
 namespace Northgard.Infrastructure.Logger
 {
     [UsedImplicitly]
-    internal class UnityLogger : ILogger
+    internal class UnityLogger : Core.Infrastructure.Logger.ILogger
     {
         public void LogMessage(string msg, object context)
         {
